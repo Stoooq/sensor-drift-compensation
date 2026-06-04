@@ -1,0 +1,25 @@
+paths:
+  data_dir: "data/"
+  results_dir: "results/"
+  models_dir: "models/"
+
+data:
+  n_sensors: 16
+  n_features_per_sensor: 8
+  n_classes: 6
+  train_batches: [1, 2, 3, 4, 5, 6]
+  test_batches: [7, 8, 9, 10]
+  gas_labels:
+    1: "ethanol"
+    2: "ethylene"
+    3: "ammonia"
+    4: "acetaldehyde"
+    5: "acetone"
+    6: "toluene"
+
+features:
+  pca_n_components: 20
+
+models:
+  classifier_types: ["svm", "rf"]
+  default_classifier: "svm"
