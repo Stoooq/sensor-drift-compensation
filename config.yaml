@@ -18,7 +18,7 @@ data:
     6: "toluene"
 
 features:
-  pca_n_components: 20
+  pca_n_components: 10
 
 models:
   classifier_types: ["svm", "rf"]
