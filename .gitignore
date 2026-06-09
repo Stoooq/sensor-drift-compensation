@@ -17,3 +17,4 @@ docs/
 mlflow.db
 
 models/
+!src/models/

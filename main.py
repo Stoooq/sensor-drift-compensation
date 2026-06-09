@@ -1,13 +1,13 @@
-from pathlib import Path
+import numpy as np
 
-from src.config import load_config
-from src.data_loader import load_data
+from src.pipeline import InferencePipeline
 
 
 def main():
-    cfg = load_config()
-    data = load_data(Path("data/"))
-    print(data[:3])
+    pipeline = InferencePipeline()
+    dummy_input = np.random.rand(128)
+    result = pipeline.predict(dummy_input)
+    print(result)
     print("Hello from sensor-drift-compensation!")
 
 
